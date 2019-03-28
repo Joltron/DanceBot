@@ -1,0 +1,45 @@
+#include <AFMotor.h>
+
+//initialize motors
+AF_DCMotor starboard(1);
+AF_DCMotor port(2);
+
+//set vars
+int waitTime = 500;
+int powerLevel = 255;
+
+//set motor speeds
+starboard.setSpeed(powerLevel);
+port.setSpeed(powerLevel);
+
+void forward()
+{
+	port.run(FORWARD);
+	starboard.run(FORWARD);
+	//both wheels fwd
+	delay(waitTime);
+	//coast for set time b/t DDR steps
+}
+
+void backwards()
+{
+	port.run(BACKWARDS);
+	starboard.run(BACKWARDS);
+	//both wheels bwd
+	delay(waitTime);
+	//coast for set time b/t DDR steps
+}
+
+void rotateLeft()
+{
+	port.run(FORWARDS);
+	starboard.run(BACKWARDS);
+	//tank control style turning
+	delay(waitTime);
+}
+
+void rotateRight()
+{
+	port.run(BACKWARDS);
+	starboard.run(FORWARDS);
+}
