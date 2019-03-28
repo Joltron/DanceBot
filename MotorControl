@@ -1,45 +1,55 @@
 #include <AFMotor.h>
 
-//initialize motors
-AF_DCMotor starboard(1);
-AF_DCMotor port(2);
+AF_DCMotor port(2, MOTOR12_64KHZ); // create motor #2, 64KHz pwm
+AF_DCMotor starboard(1, MOTOR12_64KHZ); // create motor #1, 64KHz pwm
+int waitTime = 100;
 
-//set vars
-int waitTime = 500;
-int powerLevel = 255;
+void setup() {
+  Serial.begin(9600);           // set up Serial library at 9600 bps
+  Serial.println("Motor test!");
+  
+  port.setSpeed(200);     // set the speed to 200/255
+  starboard.setSpeed(200);     // set the speed to 200/255
+}
 
-//set motor speeds
-starboard.setSpeed(powerLevel);
-port.setSpeed(powerLevel);
+void loop(){}
 
 void forward()
 {
-	port.run(FORWARD);
-	starboard.run(FORWARD);
-	//both wheels fwd
-	delay(waitTime);
-	//coast for set time b/t DDR steps
+  port.run(RELEASE);
+  starboard.run(RELEASE);
+  port.run(FORWARD);
+  starboard.run(FORWARD);
+  //both wheels fwd
+  delay(waitTime);
+  //coast for set time b/t DDR steps
 }
 
-void backwards()
+void back()
 {
-	port.run(BACKWARDS);
-	starboard.run(BACKWARDS);
-	//both wheels bwd
-	delay(waitTime);
-	//coast for set time b/t DDR steps
+  port.run(RELEASE);
+  starboard.run(RELEASE);
+  port.run(BACKWARD);
+  starboard.run(BACKWARD);
+  //both wheels bwd
+  delay(waitTime);
+  //coast for set time b/t DDR steps
 }
 
 void rotateLeft()
 {
-	port.run(FORWARDS);
-	starboard.run(BACKWARDS);
-	//tank control style turning
-	delay(waitTime);
+  port.run(RELEASE);
+  starboard.run(RELEASE);
+  port.run(FORWARD);
+  starboard.run(BACKWARD);
+  //tank control style turning
+  delay(waitTime);
 }
 
 void rotateRight()
 {
-	port.run(BACKWARDS);
-	starboard.run(FORWARDS);
+  port.run(RELEASE);
+  starboard.run(RELEASE);
+  port.run(BACKWARD);
+  starboard.run(FORWARD);
 }
