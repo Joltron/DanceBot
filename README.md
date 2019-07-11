@@ -1,10 +1,10 @@
-#DanceBot
+# DanceBot
 Award-winning robot that responds to dancing. Build your own!
 
-#Readme
+# Readme
 Work in Progress. Stay Tuned!
 
-#Hardware
+# Hardware
 1. [Arduino Uno](https://www.banggood.com/UNO-R3-ATmega328P-Development-Board-For-Arduino-No-Cable-p-964163.html)
 1. [Arduino L293D Motor Shield](https://www.banggood.com/Motor-Drive-Shield-L293D-for-Arduino-Duemilanove-Mega-UNO-p-72855.html)
 1. [Cheap RC car (for motors and chasis)](https://www.amazon.com/Thunder-Tumbler-Radio-Control-Degree/dp/B00NT73FG2)
@@ -12,11 +12,11 @@ Work in Progress. Stay Tuned!
 1. [Playstation 2 to USB adapter](https://www.amazon.com/gp/product/B01LZMNISK/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 1. Dance Dance Revolution Mat
 
-#Tools
+# Tools
 1. Soldering Iron
 1. Screwdriver
 
-#Software
+# Software
 1. [Xpadder](https://xpadder.com/forum4/)
 1. [Arduino IDE](https://www.arduino.cc/)
 1. [DanceBot code](https://github.com/Joltron/DanceBot/blob/master/combined.ino)
