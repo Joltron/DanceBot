@@ -1,6 +1,9 @@
 # DanceBot
 Award-winning robot that responds to dancing. Build your own!
 
+#Readme
+Work in Progress. Stay Tuned!
+
 #Hardware
 1. [Arduino Uno](https://www.banggood.com/UNO-R3-ATmega328P-Development-Board-For-Arduino-No-Cable-p-964163.html)
 1. [Arduino L293D Motor Shield](https://www.banggood.com/Motor-Drive-Shield-L293D-for-Arduino-Duemilanove-Mega-UNO-p-72855.html)
