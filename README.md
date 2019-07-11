@@ -1,5 +1,5 @@
 # DanceBot
-Arduino robot controlled by Dance Dance Revolution mat via laptop
+Award-winning robot that responds to dancing. Build your own!
 
 #Hardware
 1. [Arduino Uno](https://www.banggood.com/UNO-R3-ATmega328P-Development-Board-For-Arduino-No-Cable-p-964163.html)
