@@ -17,3 +17,6 @@ Award-winning robot that responds to dancing. Build your own!
 1. [Xpadder](https://xpadder.com/forum4/)
 1. [Arduino IDE](https://www.arduino.cc/)
 1. [DanceBot code](https://github.com/Joltron/DanceBot/blob/master/combined.ino)
+
+![Close-Up](/JPEG_20190410_200742.jpg)
+![Mid-Range](/JPEG_20190410_200335.jpg)
